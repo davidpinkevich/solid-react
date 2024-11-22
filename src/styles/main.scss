@@ -1,0 +1,70 @@
+@import url("./normalize.scss");
+
+.app {
+  padding: 20px;
+}
+
+.btn_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  gap: 10px;
+  min-width: 150px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  & li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+}
+
+button {
+  &:hover {
+    transition: 0.2s all;
+    transform: scale(1.05);
+  }
+}
+
+.primary {
+  border: 2px solid black;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.secondary {
+  border: 2px solid firebrick;
+  color: firebrick;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: rgb(173, 8, 8);
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.checked_btn {
+  background-color: yellow;
+}
+
+.unchecked_btn {
+  background-color: seagreen;
+}
